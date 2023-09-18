@@ -1,19 +1,16 @@
 import React from 'react'
-import Header from './components/Header'
 import HomeSlider from './components/HomeSlider'
-
+import slides from './sample.json'
 const App = () => {
   return (
     <div className='App'>
         <div className='container-fluid'>
             <div className='row'>
                 <div className='col-md-12 px-8'>
-                    <Header/>
-                    <HomeSlider/>
+                    <HomeSlider slides={slides}/>
                 </div>
             </div>
         </div>
-      <Header/>
     </div>
   )
 }
