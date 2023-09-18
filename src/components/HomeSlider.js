@@ -7,7 +7,7 @@ import "./HomeSlider.css";
 
 
 
-const HomeSlider = ({slides}) => {
+const HomeSlider = () => {
 
   return (
     <>
