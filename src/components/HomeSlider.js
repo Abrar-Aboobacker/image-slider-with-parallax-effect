@@ -1,39 +1,33 @@
 import React from "react";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Parallax } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Parallax } from "swiper/modules";
 
-import 'swiper/swiper-bundle.css'
+import "swiper/swiper-bundle.css";
 import "./HomeSlider.css";
 
-
-
 const HomeSlider = () => {
-
   return (
     <>
       <Swiper
-
-    style={{
-        '--swiper-navigation-color': '#fff',
-        '--swiper-pagination-color': '#fff',
-      }}
-      speed={600}
-      parallax={true}
-      pagination={{
-        clickable: true,
-      }}
-      navigation={true}
-      modules={[Parallax, Pagination, Navigation]}
-      className="mySwiper"
-    >
-        
- 
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
+        speed={600}
+        parallax={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Parallax, Pagination, Navigation]}
+        className="mySwiper"
+      >
         <div
           slot="container-start"
           className="parallax-bg"
           style={{
-            'background-image':
-              'url(https://images6.alphacoders.com/128/1283584.jpg)',
+            "background-image":
+              "url(https://images6.alphacoders.com/128/1283584.jpg)",
           }}
           data-swiper-parallax="-23%"
         ></div>
@@ -94,7 +88,7 @@ const HomeSlider = () => {
             </p>
           </div>
         </SwiperSlide>
-    </Swiper>
+      </Swiper>
     </>
   );
 };
